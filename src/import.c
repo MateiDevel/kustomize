@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include "import.h"
 #include <sys/stat.h>
+#include <stdlib.h>
 
 void importConf(char *username)
 {
@@ -47,6 +48,7 @@ void importConf(char *username)
 
     fclose(config);
     fclose(copy);
-
+    system("kquitapp5 plasmashell");
+    system("plasmashell --replace &"); // restart plasma
     printf("Done");
 }
