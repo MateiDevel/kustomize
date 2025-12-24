@@ -8,6 +8,7 @@
 # Under construction
 - Bunch of features to be added (p.s. my first C project, might be crap)
 - Refactor code cuz it sucks
+- Will automatically install themes if not installed
 
 # Setup
 To use the tool , do the following :
