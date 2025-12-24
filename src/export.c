@@ -51,7 +51,7 @@ void exportConf(char *username)
         checkIfInstalled(config);
         fputc(c, copy);
     }
-        
+
     fclose(config);
     fclose(copy);
 
@@ -63,7 +63,7 @@ void exportConf(char *username)
 void exportDir(char *username)
 {
     char script[256];
-    snprintf(script, sizeof(script), "/bin/bash /home/%s/kustomize-backend/src/scripts/copyDir.sh", username);
+    snprintf(script, sizeof(script), "/bin/bash /home/%s/kustomize-backend/src/scripts/copyDir.sh", username); // TODO: locate the scripts location and change here forgot this aswell very nice
 
     system(script);
 }

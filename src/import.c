@@ -52,3 +52,11 @@ void importConf(char *username)
     system("plasmashell --replace &"); // restart plasma
     printf("Done");
 }
+
+void importDir(char *username)
+{
+    char script[256];
+    snprintf(script, sizeof(script), "/bin/bash /home/%s/kustomize-backend/src/scripts/importDir.sh", username); // TODO: locate the scripts location and change here forgot this aswell very nice
+
+    system(script);
+}
