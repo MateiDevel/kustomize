@@ -2,8 +2,9 @@
 set -e
 
 USER=$(whoami) 
-
 SRC="/home/$USER/.config"
-DST="/home/$USER/Documents/kustomize"
+
+read -rp "Directory to custom .config: " DST
+
 
 rsync -a "$SRC/" "$DST/
